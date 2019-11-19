@@ -1,0 +1,198 @@
+<div class="w3-theme-l5">
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+        <!-- The Grid -->
+        <div class="w3-row">
+            <!-- Left Column -->
+            <div class="w3-col m3">
+                <!-- Accordion to align center-->
+                <br>
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Middle Column -->
+            <div class="w3-col m7">
+                <div class="w3-row-padding">
+                    <div class="w3-col m12">
+                        <div class="w3-card w3-round w3-white">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-header bg-primary text-white">
+                                                <h4>Patient Admission Form</h4>
+                                            </div>
+                                            <br>
+                                            <div class="form-group col-md-4">
+
+                                                <input type="text" class="form-control"
+                                                    name="pateintid" id="pateintid" placeholder="Enter pateintid"
+                                                    required>
+
+                                            </div>
+
+                                            <hr class="w3-clear">
+                                            <form >
+
+                                                <!--Fullname -->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">First Name:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="firstName" id="firstname"
+                                                            placeholder="Enter FirstName" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Middle Name:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="midlleName"
+                                                            placeholder="Enter MiddleName" id="midname">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Last Name:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="lastName"
+                                                            placeholder="Enter LastName" id="lastname">
+                                                    </div>
+                                                </div>
+
+                                                <!--Date of birth  and age-->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="dob">Date of birth :</label>
+                                                        <input type="date" class="form-control"
+                                                            name="dob" id="dob" placeholder="Enter date of birth"
+                                                            required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="age">Age:</label>
+                                                        <input type="number"  class="form-control"
+                                                            name="age" id="age" placeholder="Enter your Age" required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="gender">Gender : </label>
+                                                        <br>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" 
+                                                                    class="form-check-input" id="gender" value="Male"
+                                                                    name="male">Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" 
+                                                                    class="form-check-input" id="gender" value="Female"
+                                                                    name="female">Female
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Email phone-->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="phone">Phone:</label>
+                                                        <input type="tel" class="form-control" 
+                                                            pattern="[1-9]{1}[0-9]{9}" name="phone" id="phone"
+                                                            maxlength="10" placeholder="Enter Phone Number" required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="email">Email:</label>
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                             pattern=".+@gmail.com"
+                                                            placeholder="Enter Your Email" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label for="address">Address:</label>
+                                                        <input type="text" class="form-control" name="address"
+                                                             id="address"
+                                                            placeholder="Enter Address" required>
+                                                    </div>
+                                                </div>
+                                                <!--Address -->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="city">City:</label>
+                                                        <input type="text"  class="form-control"
+                                                            name="city" id="city" placeholder="Enter City">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="state">State:</label>
+                                                        <input type="text"  class="form-control"
+                                                            name="state" id="state" placeholder="Enter State">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="pin">Pincode:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="pincode" id="pin"
+                                                            placeholder="Enter PinCode">
+                                                    </div>
+                                                </div>
+                                                <div class="card-header bg-primary text-white">
+                                                    Admission Details
+                                                </div>
+                                                <hr class="w3-clear">
+                                                <!--Room Details -->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Room Type:</label>
+                                                        <select name="feedback" class="custom-select mb-3">
+                                                            <option selected>General</option>
+                                                            <option value="enquiry">Special</option>
+                                                            <option value="suggestion">MultiSpecial</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Room Number:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="roomnumber"
+                                                            placeholder="Enter Room Number" id="roomnumber">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Doctor name:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="lastName"
+                                                            placeholder="Enter DoctorName" id="lastname">
+                                                    </div>
+                                                </div>
+                                                <!--date-->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="dob">Date of Joining :</label>
+                                                        <input type="date"  class="form-control"
+                                                            name="doj" id="doj" placeholder="Enter date of Joining"
+                                                            required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="dob">Date of Discharge :</label>
+                                                        <input type="date" class="form-control"
+                                                            name="dod" id="dod" placeholder="Enter date of Discharge"
+                                                            required>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="usr">Remarks:</label>
+                                                        <input type="text" 
+                                                            class="form-control" name="remarks"
+                                                            placeholder="Enter Remarks" id="remarks">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mx-auto">
+                                                    <button type="submit"
+                                                        class="btn btn-primary text-right">Next</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
