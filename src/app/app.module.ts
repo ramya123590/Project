@@ -10,6 +10,10 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { InpatientComponent } from './inpatient/inpatient.component';
 import { FooterComponent } from './footer/footer.component';
+import { confrmPassword } from './confrmpass/confrmpass.component';
+import { EqualValidatorDirective } from './equal-validator.directive';
+import { AppointmentComponent } from './appointment/appointment.component';
+import { OtpComponent } from './otp/otp.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { FooterComponent } from './footer/footer.component';
     RegistrationComponent,
     InpatientComponent,
     FooterComponent,
+    confrmPassword,
+    EqualValidatorDirective,
+    AppointmentComponent,
+    OtpComponent
    
   ],
   imports: [
